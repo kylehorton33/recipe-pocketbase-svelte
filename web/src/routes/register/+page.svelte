@@ -8,7 +8,7 @@
         <Input type="email" name="email" label="E-mail" />
         <Input type="password" name="password" label="Password" />
         <Input
-            type="passwordConfirm"
+            type="password"
             name="passwordConfirm"
             label="Confirm Password"
         />
