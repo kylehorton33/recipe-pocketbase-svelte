@@ -1,0 +1,1 @@
+view a single recipe
