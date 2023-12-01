@@ -8,3 +8,4 @@ To Do:
 - [ ] rich text field for recipe
 - [ ] thumbnail, color picker
 - [ ] heart for liking recipe
+- [ ] different API rule depending on which field is being edited (like letting anyone "like" a recipe)
