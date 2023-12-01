@@ -9,5 +9,5 @@
     <label for={name} class="label font-medium pb-1">
         <span class="label-text">{label}</span>
     </label>
-    <input {type} {name} {value} class="input input-bordered w-full max-w-md" />
+    <input {type} {name} id={name} {value} class="input input-bordered w-full max-w-md" />
 </div>
