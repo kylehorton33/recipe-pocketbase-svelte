@@ -18,5 +18,6 @@
 
 - :white_check_mark: v1: register/login/logout features
 - :white_check_mark: v2: 'recipes' collection, CRUD operations
-- :construction: v3: expand recipe features
+- :white_check_mark: v3: expand recipe features
+- :construction: v4: ?
 
