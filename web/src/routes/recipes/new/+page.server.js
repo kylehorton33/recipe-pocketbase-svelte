@@ -1,10 +1,9 @@
 import { error, redirect } from "@sveltejs/kit"
 import { convertToSlug } from "$lib/utils"
 
-export const load = ({locals}) => {
-    console.log(locals.user)
-    if (!locals.user) {
-        throw redirect(303, '/')
+export const load = ({ locals }) => {
+    if (!locals.pb.authStore.isValid) {
+        throw error(401, "Unauthorized");
     }
 }
 
