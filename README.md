@@ -1,11 +1,22 @@
 # recipe-pocketbase-svelte
 
-To Do:
+## :construction: To Do
 
-- [X] implement DELETE action, modal (move the delete button to bottom of page/make gray
-- [ ] use getFirst().filter() in PB to find record by field. The can set slug
-- [ ] use index to create a uniqueness constraint on slug and then start using that as ID
+### For Next Version :rocket:
+
 - [ ] rich text field for recipe
+- [ ] use index to create a uniqueness constraint on slug and then start using that as ID
+- [ ] use getFirst().filter() in PB to find record by field. The can set slug
+
+### Unplanned :question:
+
 - [ ] thumbnail, color picker
 - [ ] heart for liking recipe
 - [ ] different API rule depending on which field is being edited (like letting anyone "like" a recipe)
+
+## Roadmap :chart_with_upwards_trend:
+
+- :white_check_mark: v1: register/login/logout features
+- :white_check_mark: v2: 'recipes' collection, CRUD operations
+- :construction: v3: expand recipe features
+
