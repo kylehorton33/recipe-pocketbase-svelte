@@ -1,1 +1,30 @@
-<h1>recipe page</h1>
+<script>
+    export let data;
+</script>
+
+<div class="flex flex-col space-y-4">
+    <h1 class="text-xl">Choose from {data.recipes.length} recipes:</h1>
+    <div class="grid">
+        {#each data.recipes as { name, id }}
+            <div class="card shadow-xl">
+                <div class="card-body">
+                    <h2 class="card-title capitalize">{name}</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit.
+                    </p>
+                    <div class="card-actions justify-end">
+                        <a href="/recipes/{id}" class="btn btn-neutral">View</a>
+                    </div>
+                </div>
+            </div>
+        {/each}
+    </div>
+    {#if data.user}
+        <div class="pt-4">
+            <a href="/recipes/new" class="btn btn-primary w-full"
+                >Create a new recipe</a
+            >
+        </div>
+    {/if}
+</div>

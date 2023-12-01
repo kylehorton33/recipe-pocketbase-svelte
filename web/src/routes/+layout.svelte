@@ -9,6 +9,7 @@
     <a href="/" class="btn btn-ghost normal-case text-xl">mise</a>
   </div>
   <div class="flex-none">
+    <!-- TODO make this dropdown close when clicked outside -->
     <details class="dropdown dropdown-end">
       <summary class="m-1 btn">=</summary>
       <ul
