@@ -13,19 +13,17 @@ export const actions = {
         let recipe;
 
         const body = Object.fromEntries(await request.formData())
-        const id = convertToSlug(body.name)
+        const slug = convertToSlug(body.name)
         const createdBy = locals.user.id
 
         try {
-            console.log(id);
-            recipe = await locals.pb.collection('recipes').create({ id, createdBy, ...body })
-            console.log(recipe)
+            recipe = await locals.pb.collection('recipes').create({ slug, createdBy, ...body })
         } catch (err) {
             console.log(err)
             throw error(err.status, err.message)
         }
 
-        throw redirect(303, `/recipes/${recipe.id}`)
+        throw redirect(303, `/recipes/${recipe.slug}`)
     }
 
 }

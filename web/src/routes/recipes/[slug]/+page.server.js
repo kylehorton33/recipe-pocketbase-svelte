@@ -4,9 +4,9 @@ export async function load({ locals, params }) {
     try {
         let recipe;
         if (locals.user) {
-            recipe = await locals.pb.collection('recipes').getOne(params.id, { expand: 'createdBy'});
+            recipe = await locals.pb.collection('recipes').getFirstListItem(`slug="${params.slug}"`, { expand: 'createdBy'});
         } else {
-            recipe = await locals.pb.collection('recipes').getOne(params.id);
+            recipe = await locals.pb.collection('recipes').getFirstListItem(`slug="${params.slug}"`);
         }
         return { recipe }
     } catch (err) {

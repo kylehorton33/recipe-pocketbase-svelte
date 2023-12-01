@@ -4,9 +4,9 @@
 
 ### For Next Version :rocket:
 
-- [ ] rich text field for recipe
-- [ ] use index to create a uniqueness constraint on slug and then start using that as ID
-- [ ] use getFirst().filter() in PB to find record by field. The can set slug
+- [X] ~~rich text~~ text field for recipe ingredients, instructions
+- [X] use index to create a uniqueness constraint on slug and then start using that as ID
+- [X] use ~~getFirst().filter()~~ getFirstListItem() in PB to find record by field. The can set slug
 
 ### Unplanned :question:
 
@@ -18,5 +18,6 @@
 
 - :white_check_mark: v1: register/login/logout features
 - :white_check_mark: v2: 'recipes' collection, CRUD operations
-- :construction: v3: expand recipe features
+- :white_check_mark: v3: expand recipe features
+- :construction: v4: ?
 
