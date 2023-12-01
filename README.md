@@ -4,7 +4,7 @@
 
 ### For Next Version :rocket:
 
-- [ ] rich text field for recipe
+- [X] ~~rich text~~ text field for recipe ingredients, instructions
 - [ ] use index to create a uniqueness constraint on slug and then start using that as ID
 - [ ] use getFirst().filter() in PB to find record by field. The can set slug
 
