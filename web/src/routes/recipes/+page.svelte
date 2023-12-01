@@ -1,7 +1,5 @@
 <script>
     export let data;
-
-    console.log(data.recipes);
 </script>
 
 <div class="flex flex-col space-y-4">
@@ -16,17 +14,17 @@
                         elit.
                     </p>
                     <div class="card-actions justify-end">
-                        <a href="/recipes/{id}" class="btn btn-neutral"
-                            >View</a
-                        >
+                        <a href="/recipes/{id}" class="btn btn-neutral">View</a>
                     </div>
                 </div>
             </div>
         {/each}
     </div>
-    <div class="pt-4">
-        <a href="/recipes/new" class="btn btn-primary w-full"
-            >Create a new recipe</a
-        >
-    </div>
+    {#if data.user}
+        <div class="pt-4">
+            <a href="/recipes/new" class="btn btn-primary w-full"
+                >Create a new recipe</a
+            >
+        </div>
+    {/if}
 </div>
