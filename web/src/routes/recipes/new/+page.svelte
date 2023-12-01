@@ -7,9 +7,7 @@
         <h3 class="text-2xl text-center">New Recipe:</h3>
         <Input type="text" name="name" label="Name" />
         <div class="pt-8">
-            <button type="submit" class="btn btn-success w-full"
-                >CREATE</button
-            >
+            <button type="submit" class="btn btn-success w-full">CREATE</button>
         </div>
     </form>
 </div>

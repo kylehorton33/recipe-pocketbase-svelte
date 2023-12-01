@@ -12,6 +12,7 @@ export const actions = {
 
         try {
             recipe = await locals.pb.collection('recipes').create({ createdBy, slug, ...body })
+            // TODO: index to confirm that slug is unique?
             console.log(recipe)
         } catch (err) {
             console.log(err)
