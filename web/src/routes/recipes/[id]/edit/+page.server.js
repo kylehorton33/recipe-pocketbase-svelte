@@ -39,4 +39,14 @@ export const actions = {
 
     throw redirect(302, `/recipes/${params.id}`);
   },
+  delete: async ({ locals, params }) => {
+    try {
+      // delete recipe
+    } catch (err) {
+      console.log(err);
+      throw error(err.status, err.message);
+    }
+
+    throw redirect(302, '/recipes');
+  },
 };
