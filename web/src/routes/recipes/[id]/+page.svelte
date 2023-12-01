@@ -1,6 +1,5 @@
 <script>
     export let data;
-    console.log(data);
 </script>
 
 <div class="flex flex-col space-y-4 h-full">
