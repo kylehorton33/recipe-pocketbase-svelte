@@ -1,6 +1,6 @@
 <script>
     export let data;
-    console.log(data)
+    console.log(data);
 </script>
 
 <div class="flex flex-col space-y-4 h-full">
@@ -19,9 +19,15 @@
         itaque, aspernatur dicta velit aliquid quis! Vitae commodi tenetur
         itaque at.
     </p>
-    <footer class="pt-6 flex flex-col space-y-0">
-        <small>Last Updated: {data.recipe.updated}</small>
-        <small>By: {data.recipe.expand.createdBy.username}</small>
-    </footer>
+    {#if data.user}
+        <div class="pt-6 space-y-4">
+            <a href="/recipes/{data.recipe.id}/edit" class="btn btn-neutral w-full"
+                >Update</a
+            >
+            <footer class="flex flex-col space-y-0">
+                <small>Last Updated: {data.recipe.updated}</small>
+                <small>By: {data.recipe.expand.createdBy.username}</small>
+            </footer>
+        </div>
+    {/if}
 </div>
-
