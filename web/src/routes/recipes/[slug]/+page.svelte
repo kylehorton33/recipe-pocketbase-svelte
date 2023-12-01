@@ -21,7 +21,7 @@
     {#if data.user}
         <div class="pt-6 space-y-4">
             <a
-                href="/recipes/{data.recipe.id}/edit"
+                href="/recipes/{data.recipe.slug}/edit"
                 class="btn btn-neutral w-full">Update</a
             >
             <footer class="flex flex-col space-y-0">

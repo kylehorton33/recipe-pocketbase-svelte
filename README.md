@@ -6,7 +6,7 @@
 
 - [X] ~~rich text~~ text field for recipe ingredients, instructions
 - [X] use index to create a uniqueness constraint on slug and then start using that as ID
-- [ ] use getFirst().filter() in PB to find record by field. The can set slug
+- [X] use ~~getFirst().filter()~~ getFirstListItem() in PB to find record by field. The can set slug
 
 ### Unplanned :question:
 

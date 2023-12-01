@@ -23,7 +23,7 @@ export const actions = {
             throw error(err.status, err.message)
         }
 
-        throw redirect(303, `/recipes/${recipe.id}`)
+        throw redirect(303, `/recipes/${recipe.slug}`)
     }
 
 }
