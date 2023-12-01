@@ -3,13 +3,13 @@
     export let data;
 
     let deleteModalOpen;
-    
+
     $: deleteModalOpen = false;
 
 </script>
 
 <div class="flex flex-col mt-8">
-    <form action="?/update" method="POST" class="space-y-4">
+    <form action="?/update" id="update-recipe" method="POST" class="space-y-4">
         <h3 class="text-2xl text-center">Update:</h3>
         <Input type="text" name="name" label="Name" value={data.recipe.name} />
         <div class="pt-8 flex flex-col space-y-4">
