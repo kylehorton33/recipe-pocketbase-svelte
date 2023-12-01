@@ -6,7 +6,12 @@ export const generateUsername = () => {
 }
 
 export const convertToSlug = (text) => {
-    return text.toLowerCase()
-      .replace(/ /g, "-")
-      .replace(/[^\w-]+/g, "");
-  }
+    // collection id in PocketBase must be exactly 15 characters.
+    //   use this method to generate a slug from the name with some
+    //   extra characters attached to ensure length requirement is met
+    const slug = text.toLowerCase()
+        .replace(/ /g, "-")
+        .replace(/[^\w-]+/g, "");
+    const buf = randomBytes(8).toString('hex')
+    return `${slug}-${buf}`.slice(0, 15);
+}

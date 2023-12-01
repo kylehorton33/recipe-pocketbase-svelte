@@ -8,6 +8,6 @@ export const load = async ({ locals }) => {
         }
     } catch (err) {
         console.log(err)
-        throw errror(err.status, err.message)
+        throw error(err.status, err.message)
     }
 }
