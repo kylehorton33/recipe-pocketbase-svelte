@@ -4,9 +4,9 @@
 
 ### For Next Version :rocket:
 
-- [X] ~~rich text~~ text field for recipe ingredients, instructions
-- [X] use index to create a uniqueness constraint on slug and then start using that as ID
-- [X] use ~~getFirst().filter()~~ getFirstListItem() in PB to find record by field. The can set slug
+- [ ] update ingredients, instructions in `/edit` page
+- [ ] close nav dropdown menu when clicked outside
+- [ ] responsive design for content
 
 ### Unplanned :question:
 
