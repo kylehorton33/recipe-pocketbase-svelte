@@ -1,8 +1,9 @@
 <script>
+    import {Pencil} from '$lib/icons';
     export let data;
 </script>
 
-<div class="flex flex-col space-y-4 h-full md:max-w-md">
+<div class="flex flex-col space-y-4 h-full md:max-w-md mt-4">
     <h1 class="text-2xl w-full text-center">
         <div class="avatar mr-2">
             <div
@@ -31,17 +32,18 @@
             <div class="divider"></div>
 
             <footer class="flex">
-                <div class="flex basis-2/3 flex-col justify-center">
+                <div class="flex basis-3/4 flex-col justify-center">
                     <small
                         ><strong>Updated By:</strong> {data.recipe.expand.createdBy
                             .username}</small
                     >
                     <small>{data.recipe.updated}</small>
                 </div>
-                <div class="basis-1/3">
+                <div class="basis-1/4">
                     <a
                         href="/recipes/{data.recipe.slug}/edit"
-                        class="btn btn-ghost">EDIT</a
+                        class="btn btn-ghost">
+                        <Pencil cls="w-4 h-4" /></a
                     >
                 </div>
             </footer>

@@ -1,5 +1,6 @@
 <script>
     import { Input, Modal } from "$lib/components";
+    import {Trash} from '$lib/icons';
     export let data;
 
     let deleteModalOpen;
@@ -12,7 +13,7 @@
         <div class="relative w-screen">
             <div class="absolute right-2">
                 <span class="btn btn-ghost">
-                    X
+                    <Trash cls="h-4 w-4" />
                 </span>
             </div>
         </div>
