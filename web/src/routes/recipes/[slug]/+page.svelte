@@ -6,7 +6,7 @@
     <h1 class="text-2xl w-full text-center"><div class="avatar mr-2">
         <div
             style="background: {data.recipe.color} ;"
-            class="rounded-full w-4"
+            class="bg-neutral rounded-full w-4"
         ></div>
     </div>{data.recipe.name}</h1>
     <div class="w-full pl-4">

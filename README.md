@@ -5,11 +5,11 @@
 ### For Next Version :rocket:
 
 - [X] avatar with color~~/thumb~~ next to title
+- [X] color picker
 - [X] write some tests
 
 ### Unplanned :question:
 
-- [ ] color picker
 - [ ] heart for liking recipe
 - [ ] different API rule depending on which field is being edited (like letting anyone "like" a recipe)
 - [ ] input validation (zod?)

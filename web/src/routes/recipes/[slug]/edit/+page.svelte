@@ -12,6 +12,12 @@
         <input type="hidden" id="id" name="id" value={data.recipe.id} />
         <h3 class="text-2xl text-center">Update:</h3>
         <Input type="text" name="name" label="Name" value={data.recipe.name} />
+        <div class="form-control">
+            <label for="color" class="label font-medium pb-1">
+                Color
+            </label>
+            <input type="color" id="color" name="color" value={data.recipe.color}>
+        </div>
         <div class="form-control w-full max-w-md">
             <label for="ingredients" class="label font-medium pb-1">
                 <span class="label-text">Ingredients</span>

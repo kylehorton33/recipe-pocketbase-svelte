@@ -12,7 +12,7 @@
                         <div class="avatar">
                             <div
                                 style="background: {color} ;"
-                                class="rounded-full w-4"
+                                class="bg-neutral rounded-full w-4"
                             ></div>
                         </div>
                         {name}
