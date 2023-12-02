@@ -7,7 +7,7 @@
     <slot name="trigger" />
 </label>
 
-<input type="checkbox" id={label} class="modal-toggle" {checked} />
+<input type="checkbox" id={label} class="modal-toggle flex w-full" {checked} />
 <label for={label} class="modal modal-bottom sm:modal-middle">
     <label for="" class="modal-box">
         <div class="font-bold text-xl text-center">

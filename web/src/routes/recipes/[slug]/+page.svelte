@@ -1,13 +1,22 @@
 <script>
+    import {Pencil} from '$lib/icons';
     export let data;
 </script>
 
-<div class="flex flex-col space-y-4 h-full md:max-w-md">
-    <h1 class="text-2xl w-full text-center">{data.recipe.name}</h1>
+<div class="flex flex-col space-y-4 h-full md:max-w-md mt-4">
+    <h1 class="text-2xl w-full text-center">
+        <div class="avatar mr-2">
+            <div
+                style="background: {data.recipe.color} ;"
+                class="bg-neutral rounded-full w-4"
+            ></div>
+        </div>
+        {data.recipe.name}
+    </h1>
     <div class="w-full pl-4">
         <ul class="space-y-1 list-disc list-inside">
             {#if data.recipe.ingredients}
-                {#each data.recipe.ingredients.split(', ') as line}
+                {#each data.recipe.ingredients.split(", ") as line}
                     <li>{line}</li>
                 {/each}
             {:else}
@@ -20,13 +29,23 @@
     </p>
     {#if data.user}
         <div class="pt-6 space-y-4">
-            <a
-                href="/recipes/{data.recipe.slug}/edit"
-                class="btn btn-neutral w-full">Update</a
-            >
-            <footer class="flex flex-col space-y-0">
-                <small>Last Updated: {data.recipe.updated}</small>
-                <small>By: {data.recipe.expand.createdBy.username}</small>
+            <div class="divider"></div>
+
+            <footer class="flex">
+                <div class="flex basis-3/4 flex-col justify-center">
+                    <small
+                        ><strong>Updated By:</strong> {data.recipe.expand.createdBy
+                            .username}</small
+                    >
+                    <small>{data.recipe.updated}</small>
+                </div>
+                <div class="basis-1/4">
+                    <a
+                        href="/recipes/{data.recipe.slug}/edit"
+                        class="btn btn-ghost">
+                        <Pencil cls="w-4 h-4" /></a
+                    >
+                </div>
             </footer>
         </div>
     {/if}
