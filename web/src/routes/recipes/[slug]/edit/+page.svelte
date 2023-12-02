@@ -24,9 +24,9 @@
             <h3>Are you sure you want to delete '{data.recipe.name}'?</h3>
             <small>This action cannot be undone</small>
         </div>
-        <form action="?/delete" method="POST">
+        <form action="?/delete" method="POST" class="flex flex-col items-center">
             <input type="hidden" id="id" name="id" value={data.recipe.id}>
-            <button type="submit" class="btn btn-error w-full">DELETE</button>
+            <button type="submit" class="btn btn-error w-full mt-4 md:max-w-sm">DELETE</button>
         </form>
     </Modal>
 </div>

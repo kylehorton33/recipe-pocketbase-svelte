@@ -27,6 +27,6 @@
             label="Enter your new username:"
             value={form?.data?.username}
         />
-        <button type="submit" class="btn btn-success w-full">Save</button>
+        <button type="submit" class="btn btn-success w-full md:max-w-md">Save</button>
     </form>
 </Modal>

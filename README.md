@@ -6,7 +6,7 @@
 
 - [ ] update ingredients, instructions in `/edit` page
 - [ ] close nav dropdown menu when clicked outside
-- [ ] responsive design for content
+- [X] responsive design for content
 
 ### Unplanned :question:
 
