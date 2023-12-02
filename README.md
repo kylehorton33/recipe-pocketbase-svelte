@@ -7,7 +7,7 @@
 - [X] avatar with color~~/thumb~~ next to title
 - [X] color picker
 - [X] write some tests
-- [ ] style/UI tweaking
+- [X] style/UI tweaking
 
 ### Unplanned :question:
 
@@ -26,5 +26,5 @@
 - :white_check_mark: v2: 'recipes' collection, CRUD operations
 - :white_check_mark: v3: expand recipe features
 - :white_check_mark: v3.1: update all fields in recipe, fix nav, responsive design
-- :construction: v4: ?
+- :white_check_mark: v3.2: add `color` to recipes, UI tweaking, start to implement testing
 
