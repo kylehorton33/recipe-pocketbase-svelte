@@ -7,6 +7,7 @@
 - [X] avatar with color~~/thumb~~ next to title
 - [X] color picker
 - [X] write some tests
+- [ ] style/UI tweaking
 
 ### Unplanned :question:
 
