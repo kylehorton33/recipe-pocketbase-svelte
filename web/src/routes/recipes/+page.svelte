@@ -1,6 +1,5 @@
 <script>
     export let data;
-    console.log(data.recipes)
 </script>
 
 <div class="flex flex-col space-y-4">
