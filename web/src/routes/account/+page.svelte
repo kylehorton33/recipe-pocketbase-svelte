@@ -1,7 +1,6 @@
 <script>
     import { Input, Modal } from "$lib/components";
     export let data, form;
-    console.log(data);
 
     let usernameModalOpen;
 
@@ -23,7 +22,6 @@
         <Input
             type="text"
             name="username"
-            required="true"
             label="Enter your new username:"
             value={form?.data?.username}
         />
