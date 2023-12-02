@@ -17,6 +17,7 @@
 - [ ] tailwind lineclamp on ingredients preview
 - [ ] upload image, display thumbnail
 - [ ] search bar feature
+- [ ] move `/new` to a modal on `/recipes`
 
 ## Roadmap :chart_with_upwards_trend:
 
