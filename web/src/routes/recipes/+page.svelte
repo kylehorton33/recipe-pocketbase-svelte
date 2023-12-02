@@ -1,11 +1,10 @@
 <script>
     export let data;
-    console.log(data.recipes)
 </script>
 
 <div class="flex flex-col space-y-4">
     <h1 class="text-xl">Choose from {data.recipes.length} recipes:</h1>
-    <div class="grid">
+    <div class="grid md:grid-cols-2 gap-2">
         {#each data.recipes as { name, slug, ingredients }}
             <div class="card shadow-xl">
                 <div class="card-body">
@@ -21,8 +20,8 @@
         {/each}
     </div>
     {#if data.user}
-        <div class="pt-4">
-            <a href="/recipes/new" class="btn btn-primary w-full"
+        <div class="pt-4 flex flex-col items-center">
+            <a href="/recipes/new" class="btn btn-primary w-full md:max-w-md"
                 >Create a new recipe</a
             >
         </div>

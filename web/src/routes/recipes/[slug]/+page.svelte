@@ -2,7 +2,7 @@
     export let data;
 </script>
 
-<div class="flex flex-col space-y-4 h-full">
+<div class="flex flex-col space-y-4 h-full md:max-w-md">
     <h1 class="text-2xl w-full text-center">{data.recipe.name}</h1>
     <div class="w-full pl-4">
         <ul class="space-y-1 list-disc list-inside">
