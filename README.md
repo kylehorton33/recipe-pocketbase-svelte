@@ -16,6 +16,7 @@
 - [ ] tailwind fraction style (not as easy as applying style, need to only apply to fractions)
 - [ ] tailwind lineclamp on ingredients preview
 - [ ] upload image, display thumbnail
+- [ ] search bar feature
 
 ## Roadmap :chart_with_upwards_trend:
 
