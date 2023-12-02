@@ -19,5 +19,6 @@
 - :white_check_mark: v1: register/login/logout features
 - :white_check_mark: v2: 'recipes' collection, CRUD operations
 - :white_check_mark: v3: expand recipe features
+- :white_check_mark: v3.1: update all fields in recipe, fix nav, responsive design
 - :construction: v4: ?
 
