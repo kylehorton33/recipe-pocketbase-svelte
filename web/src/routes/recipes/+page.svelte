@@ -5,15 +5,25 @@
 <div class="flex flex-col space-y-4">
     <h1 class="text-xl">Choose from {data.recipes.length} recipes:</h1>
     <div class="grid md:grid-cols-2 gap-2">
-        {#each data.recipes as { name, slug, ingredients }}
+        {#each data.recipes as { name, slug, ingredients, color }}
             <div class="card shadow-xl">
                 <div class="card-body">
-                    <h2 class="card-title capitalize">{name}</h2>
+                    <h2 class="card-title capitalize">
+                        <div class="avatar">
+                            <div
+                                style="background: {color} ;"
+                                class="rounded-full w-4"
+                            ></div>
+                        </div>
+                        {name}
+                    </h2>
                     <p>
                         {ingredients}
                     </p>
                     <div class="card-actions justify-end">
-                        <a href="/recipes/{slug}" class="btn btn-neutral">View</a>
+                        <a href="/recipes/{slug}" class="btn btn-neutral"
+                            >View</a
+                        >
                     </div>
                 </div>
             </div>

@@ -3,7 +3,12 @@
 </script>
 
 <div class="flex flex-col space-y-4 h-full md:max-w-md">
-    <h1 class="text-2xl w-full text-center">{data.recipe.name}</h1>
+    <h1 class="text-2xl w-full text-center"><div class="avatar mr-2">
+        <div
+            style="background: {data.recipe.color} ;"
+            class="rounded-full w-4"
+        ></div>
+    </div>{data.recipe.name}</h1>
     <div class="w-full pl-4">
         <ul class="space-y-1 list-disc list-inside">
             {#if data.recipe.ingredients}

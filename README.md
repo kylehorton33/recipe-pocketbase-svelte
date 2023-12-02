@@ -4,16 +4,18 @@
 
 ### For Next Version :rocket:
 
+- [X] avatar with color~~/thumb~~ next to title
+
 ### Unplanned :question:
 
-- [ ] thumbnail, color picker
-- [ ] avatar with color/thumb next to title
+- [ ] color picker
 - [ ] heart for liking recipe
 - [ ] different API rule depending on which field is being edited (like letting anyone "like" a recipe)
 - [ ] write some tests
 - [ ] input validation (zod?)
 - [ ] tailwind fraction style
 - [ ] tailwind lineclamp on ingredients preview
+- [ ] upload image, display thumbnail
 
 ## Roadmap :chart_with_upwards_trend:
 
