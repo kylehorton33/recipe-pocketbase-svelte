@@ -12,6 +12,8 @@
 - [ ] different API rule depending on which field is being edited (like letting anyone "like" a recipe)
 - [ ] write some tests
 - [ ] input validation (zod?)
+- [ ] tailwind fraction style
+- [ ] tailwind lineclamp on ingredients preview
 
 ## Roadmap :chart_with_upwards_trend:
 
