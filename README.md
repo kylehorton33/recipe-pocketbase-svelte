@@ -4,15 +4,14 @@
 
 ### For Next Version :rocket:
 
-- [X] update ingredients, instructions in `/edit` page
-- [X] close nav dropdown menu when clicked outside
-- [X] responsive design for content
-
 ### Unplanned :question:
 
 - [ ] thumbnail, color picker
+- [ ] avatar with color/thumb next to title
 - [ ] heart for liking recipe
 - [ ] different API rule depending on which field is being edited (like letting anyone "like" a recipe)
+- [ ] write some tests
+- [ ] input validation (zod?)
 
 ## Roadmap :chart_with_upwards_trend:
 
