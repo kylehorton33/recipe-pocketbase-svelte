@@ -10,10 +10,13 @@
   </div>
   <div class="flex-none">
     <!-- TODO make this dropdown close when clicked outside -->
-    <details class="dropdown dropdown-end">
-      <summary class="m-1 btn">=</summary>
+    <div class="dropdown dropdown-end">
+      <div tabindex="0" role="button" class="btn m-1">=</div>
+      <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+      <!-- svelte-ignore a11y-label-has-associated-control -->
       <ul
-        class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-32"
+        tabindex="0"
+        class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
       >
         {#if data.user}
           <li>
@@ -30,7 +33,7 @@
           <li><a href="/register">Register</a></li>
         {/if}
       </ul>
-    </details>
+    </div>
   </div>
 </nav>
 

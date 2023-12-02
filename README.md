@@ -5,7 +5,7 @@
 ### For Next Version :rocket:
 
 - [X] update ingredients, instructions in `/edit` page
-- [ ] close nav dropdown menu when clicked outside
+- [X] close nav dropdown menu when clicked outside
 - [X] responsive design for content
 
 ### Unplanned :question:
