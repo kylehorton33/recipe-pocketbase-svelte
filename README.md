@@ -4,10 +4,7 @@
 
 ### For Next Version :rocket:
 
-- [X] avatar with color~~/thumb~~ next to title
-- [X] color picker
-- [X] write some tests
-- [X] style/UI tweaking
+- [X] search bar feature
 
 ### Unplanned :question:
 
@@ -17,7 +14,6 @@
 - [ ] tailwind fraction style (not as easy as applying style, need to only apply to fractions)
 - [ ] tailwind lineclamp on ingredients preview
 - [ ] upload image, display thumbnail
-- [ ] search bar feature
 - [ ] move `/new` to a modal on `/recipes`
 
 ## Roadmap :chart_with_upwards_trend:
