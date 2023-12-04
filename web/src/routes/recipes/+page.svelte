@@ -76,9 +76,9 @@
     >
         <MagnifyingGlass cls="w-4 h-4" /> Search from {data.recipes.length} recipes
     </button>
-    <div class="grid md:grid-cols-2 gap-2">
+    <div class="grid lg:grid-cols-2 gap-2">
         {#each data.recipes as { name, slug, ingredients, color }}
-            <div class="card shadow-xl">
+            <div class="card shadow-xl max-w-md">
                 <div class="card-body">
                     <h2 class="card-title capitalize">
                         <div class="avatar">
