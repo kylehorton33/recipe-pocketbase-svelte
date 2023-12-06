@@ -5,6 +5,7 @@
 ### For Next Version :rocket:
 
 - [X] fix dark/light mode visibility
+- [X] recipe view card size changing (line-clamp-2)
 
 ### Unplanned :question:
 

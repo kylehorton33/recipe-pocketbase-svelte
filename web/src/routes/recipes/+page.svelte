@@ -97,7 +97,7 @@
                         </div>
                         {name}
                     </h2>
-                    <p>
+                    <p class="line-clamp-2 h-12">
                         {ingredients}
                     </p>
                     <div class="card-actions justify-end">
