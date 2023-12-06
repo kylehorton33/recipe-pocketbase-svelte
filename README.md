@@ -4,7 +4,7 @@
 
 ### For Next Version :rocket:
 
-- [X] search bar feature
+- [X] fix dark/light mode visibility
 
 ### Unplanned :question:
 
@@ -24,4 +24,5 @@
 - :white_check_mark: v0.3.1: update all fields in recipe, fix nav, responsive design
 - :white_check_mark: v0.3.2: add `color` to recipes, UI tweaking, start to implement testing
 - :white_check_mark: v0.4.0: implement search bar
+- :construction: v0.4.1: fix some style bugs
 
