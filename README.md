@@ -6,6 +6,7 @@
 
 - [X] fix dark/light mode visibility
 - [X] recipe view card size changing (line-clamp-2)
+- [X] 'add new recipe' on search modal
 
 ### Unplanned :question:
 

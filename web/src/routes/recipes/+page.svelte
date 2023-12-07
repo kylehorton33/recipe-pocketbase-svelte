@@ -42,7 +42,10 @@
                 />
             </div>
             {#if searchTerm}
-                <div class="w-full p-3" transition:fly={{ duration: 150, y: 50 }}>
+                <div
+                    class="w-full p-3"
+                    transition:fly={{ duration: 150, y: 50 }}
+                >
                     <p class="my-1 text-white/50">
                         {#if filteredRecipes.length === 0}
                             No recipes found.
@@ -55,7 +58,9 @@
                                 : "recipes"}
                         {/if}
                     </p>
-                    <div class="hide-scrollbar overflow-y-scroll h-[300px] text-white">
+                    <div
+                        class="hide-scrollbar overflow-y-scroll h-[300px] text-white"
+                    >
                         {#each filteredRecipes as { name, slug, ingredients }}
                             <a
                                 href="/recipes/{slug}"
@@ -68,6 +73,15 @@
                                 </div>
                             </a>
                         {/each}
+                        {#if data.user}
+                            <div
+                                class="flex w-full items-center justify-center"
+                            >
+                                <a href="/recipes/new" class="text-center"
+                                    >Add a new recipe</a
+                                >
+                            </div>
+                        {/if}
                     </div>
                 </div>
             {/if}
