@@ -9,7 +9,6 @@
     <a href="/" class="btn btn-ghost normal-case text-xl">mise</a>
   </div>
   <div class="flex-none">
-    <!-- TODO make this dropdown close when clicked outside -->
     <div class="dropdown dropdown-end">
       <div tabindex="0" role="button" class="btn m-1">=</div>
       <!-- svelte-ignore a11y-no-noninteractive-tabindex -->

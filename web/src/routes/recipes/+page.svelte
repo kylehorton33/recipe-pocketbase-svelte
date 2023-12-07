@@ -29,7 +29,7 @@
             class="relative mx-5 w-[500px] rounded-md bg-white/20 outline outline-2 outline-white/40"
         >
             <div
-                class="sticky inset-x-0 top-0 flex w-full items-center justify-between gap-2 border-b-[1.5px] border-b-white/40 bg-black/30 py-2 pl-3 pr-2"
+                class="sticky inset-x-0 top-0 flex w-full items-center justify-between gap-2 border-b-[1.5px] border-b-white/40 bg-black/30 text-white py-2 pl-3 pr-2"
             >
                 <MagnifyingGlass cls="w-4 h-4" />
                 <!-- svelte-ignore a11y-autofocus -->
@@ -42,7 +42,10 @@
                 />
             </div>
             {#if searchTerm}
-                <div class="w-full p-3" transition:fly={{ duration: 150, y: 50 }}>
+                <div
+                    class="w-full p-3"
+                    transition:fly={{ duration: 150, y: 50 }}
+                >
                     <p class="my-1 text-white/50">
                         {#if filteredRecipes.length === 0}
                             No recipes found.
@@ -55,7 +58,9 @@
                                 : "recipes"}
                         {/if}
                     </p>
-                    <div class="hide-scrollbar overflow-y-scroll h-[300px]">
+                    <div
+                        class="hide-scrollbar overflow-y-scroll h-[300px] text-white"
+                    >
                         {#each filteredRecipes as { name, slug, ingredients }}
                             <a
                                 href="/recipes/{slug}"
@@ -68,6 +73,15 @@
                                 </div>
                             </a>
                         {/each}
+                        {#if data.user}
+                            <div
+                                class="flex w-full items-center justify-center"
+                            >
+                                <a href="/recipes/new" class="text-center"
+                                    >Add a new recipe</a
+                                >
+                            </div>
+                        {/if}
                     </div>
                 </div>
             {/if}
@@ -80,7 +94,7 @@
         on:click={() => {
             isSearchVisible = true;
         }}
-        class="flex items-center justify-center gap-2 rounded-full bg-none p-2 text-white/50 outline outline-[1.5px] outline-white/10 transition hover:bg-white/10"
+        class="flex items-center justify-center gap-2 rounded-full bg-none p-2 outline outline-[1.5px] transition"
     >
         <MagnifyingGlass cls="w-4 h-4" />
     </button>
@@ -97,7 +111,7 @@
                         </div>
                         {name}
                     </h2>
-                    <p>
+                    <p class="line-clamp-2 h-12">
                         {ingredients}
                     </p>
                     <div class="card-actions justify-end">
